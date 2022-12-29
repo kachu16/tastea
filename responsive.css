@@ -1,0 +1,188 @@
+/* IMAGE SECTION  */
+@media screen and (max-width: 1000px) {
+  #image-section {
+    height: auto;
+  }
+  #head1 {
+    line-height: 2rem;
+    font-size: 1.6rem;
+  }
+  #head2 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+  #head3 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+  #para {
+    font-size: 0.8rem;
+  }
+  .main-btn {
+    padding: 0.3rem 0.7rem;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 336px) {
+  #head2 {
+    font-size: 1.4rem;
+    line-height: 1rem;
+  }
+  #head3 {
+    font-size: 1.4rem;
+    line-height: 1rem;
+  }
+  #para {
+    font-size: 0.6rem;
+    margin: 1rem 0 0.4rem 0;
+  }
+  .main-btn {
+    padding: 0.2rem 0.6rem;
+    font-size: 10px;
+  }
+}
+
+/* BEST SELLERS  */
+@media screen and (max-width: 575px) and (min-width: 440px) {
+  .card-img {
+    width: 200px;
+    height: 200px;
+  }
+  .my-card {
+    width: 200px;
+    height: 250px;
+    margin: auto;
+  }
+
+  /* LUXURY GIFTING  */
+  .card-text-2 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 440px) and (min-width: 370px) {
+  .card-img {
+    width: 160px;
+    height: 180px;
+  }
+  .my-card {
+    width: 160px;
+    height: 200px;
+    margin: auto;
+  }
+  .card-text {
+    font-size: 12px;
+  }
+
+  /* LUXURY GIFTING  */
+  .card-img-2 {
+    width: 160px;
+    height: 180px;
+  }
+  .my-card-2 {
+    width: 160px;
+    height: 220px;
+    margin: auto;
+  }
+  .card-text-2 {
+    font-size: 9.5px;
+  }
+}
+
+@media screen and (max-width: 370px) and (min-width: 320px) {
+  .heading {
+    font-size: 23px;
+  }
+  .card-img {
+    width: 140px;
+    height: 140px;
+  }
+  .my-card {
+    width: 140px;
+    height: 160px;
+    margin: auto;
+  }
+  .card-text {
+    font-size: 9px;
+  }
+
+  /* LUXURY GIFTING  */
+  .card-img-2 {
+    width: 140px;
+    height: 140px;
+  }
+  .my-card-2 {
+    width: 140px;
+    height: 180px;
+    margin: auto;
+  }
+  .card-text-2 {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) and (min-width: 280px){
+  .card-img {
+    width: 120px;
+    height: 120px;
+  }
+  .my-card {
+    width: 120px;
+    height: 140px;
+    margin: auto;
+  }
+  .card-text {
+    font-size: 8px;
+  }
+
+  /* LUXURY GIFTING  */
+  .card-img-2 {
+    width: 120px;
+    height: 120px;
+  }
+  .my-card-2 {
+    width: 120px;
+    height: 170px;
+    margin: auto;
+  }
+  .card-text-2 {
+    font-size: 7px;
+  }
+
+}
+
+/* LUXURY GIFTING  */
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .card-text-2 {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 771px) and (min-width: 576px) {
+  .card-text-2 {
+    font-size: 12.4px;
+  }
+}
+
+
+/* STAY CONNECTED  */
+@media screen and (max-width: 768px) and (min-width:622px){
+  #stay_connected{
+    font-size: 27px;
+  }
+  #with_us{
+    font-size: 27px;
+  }
+  #newsletter{
+    font-size: 20px;
+  }
+  #email {
+    width: 40%;
+    border-radius: 8px;
+    padding: 6px;
+    border: none;
+    font-size: 0.6rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+}
