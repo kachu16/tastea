@@ -95,10 +95,10 @@ html {
 #list:hover #tea_list li a {
   display: contents;
 }
-.dropdown:hover .dropdown-menu{
+.dropdown:hover .dropdown-menu {
   display: block;
 }
-.list-background{
+.list-background {
   background-color: #e6dfd9;
 }
 /* IMAGE SECTION  */
@@ -154,16 +154,14 @@ html {
 }
 
 /* WHY TASTEA  */
-.headers{
-  color:#996278;
+.headers {
+  color: #996278;
   font-weight: 800;
   font-size: 30px;
 }
-/* #slider_container img{
-  width: 550px;
-  height: 450px;
+#slider_container img {
   border-radius: 23px;
-} */
+}
 
 /* BEST SELLERS  */
 .card-text {
@@ -187,21 +185,63 @@ html {
 }
 
 /* STAY CONNECTED  */
-#email {
-    width: 40%;
-    border-radius: 10px;
-    padding: 10px 10px;
-    border: none;
-    font-size: 0.8rem;
-    font-weight: 500;
-    margin-top: 1rem;
-  }
-  #stay_connected {
-    /* background-color: rgb(227 230 243); */
-    background-color: #e8cbd7;
-  }
-  #submit_btn{
-    border: none;
-    padding: 5px;
-    border-radius: 10px;
-  }
+#stay_connected {
+  /* background-color: rgb(227 230 243); */
+  background-color: #e8cbd7;
+}
+
+#emailForm{
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  width: 50%;
+}
+#mailbox{
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  background-color: white;
+  border-radius: 10px;
+}
+#email,#submit_btn{
+  outline: none;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+
+}
+#whatsapp_{
+  display: flex;
+  align-items: center;
+}
+/* HOW CAN WE HELP YOU SECTION  */
+.help_button {
+  border-radius: 12px;
+  padding: 0.3rem 1rem;
+}
+
+/* FOOTER  */
+#footer li {
+  list-style: none;
+}
+#footer a:hover {
+  color: #9f476a;
+}
+#footer a {
+  color: #332a2d;
+  font-size: 0.934rem;
+  line-height: 20px;
+}
+
+.footer_head {
+  margin-bottom: 0.7rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  color: #9f476a;
+}
+#footer .head {
+  font-size: 1.1rem;
+  color: #9f476a;
+}
+#footer h3 {
+  color: #9f476a;
+}
