@@ -61,7 +61,7 @@ function displayTea() {
         if (cl === teaClasses[j]) {
           ele.className = ele.className.replace("d-none", "");
           count = count + 1;
-          if (count==5) {
+          if (count==4) {
             return;
           }
         }
