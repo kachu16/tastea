@@ -1,4 +1,6 @@
-/* DEFAULT STYLING */
+/******************************
+      DEFAULT STYLING 
+*******************************/
 body {
   font-family: "Ubuntu", sans-serif;
 }
@@ -24,7 +26,9 @@ a {
   font-weight: bold;
 }
 
-/* SCROLLBAR  */
+/******************************
+          SCROLLBAR
+*******************************/
 html {
   scroll-behavior: smooth;
 }
@@ -38,7 +42,9 @@ html {
   background-color: #a8aaa6;
 }
 
-/* NAVBAR */
+/********************************
+            NAVBAR 
+*********************************/
 
 #navbar {
   /* background-color: #ecf1f2; */
@@ -100,7 +106,9 @@ html {
 .list-background {
   background-color: #e6dfd9;
 }
-/* IMAGE SECTION  */
+/************************************
+          IMAGE SECTION
+*************************************/
 #image-section {
   width: 100%;
   height: 100vh;
@@ -152,14 +160,21 @@ html {
   transition: 0.3s ease-in;
 }
 
-/* WHY TASTEA  */
+/************************************
+             WHY TASTEA
+**************************************/
 .headers {
   color: #996278;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 36px;
 }
 #slider_container img {
   border-radius: 23px;
+}
+#slider_container p {
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
 }
 
 /* BEST SELLERS  */
@@ -175,6 +190,7 @@ html {
   cursor: pointer;
   border-radius: 17px;
   border: none;
+  margin-bottom: 20px;
 }
 .card-img {
   /* border-radius: 17px; */
@@ -183,42 +199,57 @@ html {
   height: 250px;
 }
 
-/* STAY CONNECTED  */
+/* ****************************************
+        HOW CAN WE HELP YOU SECTION
+  *****************************************/
+.help_button {
+  border-radius: 12px;
+  padding: 0.3rem 1rem;
+}
+#help_section {
+  border-radius: 17px;
+}
+#help_section label {
+  color: #620429;
+  font-size: 15px;
+}
+
+/*****************************************
+            STAY CONNECTED 
+******************************************/
 #stay_connected {
   /* background-color: rgb(227 230 243); */
   background-color: #e8cbd7;
 }
 
-#emailForm{
-  display: grid;
-  grid-template-columns: 9fr 1fr;
-  width: 50%;
-}
-#mailbox{
-  display: grid;
-  grid-template-columns: 9fr 1fr;
-  background-color: white;
-  border-radius: 10px;
-}
-#email,#submit_btn{
-  outline: none;
+#submit_button {
   border: none;
-  background-color: white;
-  border-radius: 10px;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  margin-right: 10px;
+  padding-left: 5px;
+  background: white;
+}
+
+#email {
+  width: 40%;
+  border: none;
   padding: 5px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+#email::placeholder{
+  font-size: 14px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-#whatsapp_{
-  display: flex;
-  align-items: center;
-}
-/* HOW CAN WE HELP YOU SECTION  */
-.help_button {
-  border-radius: 12px;
-  padding: 0.3rem 1rem;
+#emailForm svg{
+  color: green;
 }
 
-/* FOOTER  */
+/**********************************
+             FOOTER
+************************************/
 #footer li {
   list-style: none;
 }
