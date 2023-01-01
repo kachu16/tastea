@@ -176,6 +176,24 @@ html {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
 }
+.slider{
+  display: none;
+  animation: effect 3s;
+  transition: all 3s ease-in;
+}
+@keyframes effect {
+  0%{
+    opacity: 0;
+    transform: scale(0.85);
+    /* transform: rotate3d(360deg); */
+    /* transform: rotate3d(170deg); */
+    /* transform: translateX(25%); */
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
 
 /* BEST SELLERS  */
 .card-text {
