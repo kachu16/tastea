@@ -122,7 +122,7 @@
   }
 }
 
-@media screen and (max-width: 320px) and (min-width: 280px){
+@media screen and (max-width: 320px) and (min-width: 280px) {
   .card-img {
     width: 120px;
     height: 120px;
@@ -149,7 +149,6 @@
   .card-text-2 {
     font-size: 7px;
   }
-
 }
 
 /* LUXURY GIFTING  */
@@ -164,25 +163,119 @@
   }
 }
 
+/* WHY TASTEA  */
+@media screen and (max-width: 429px) {
+  .headers {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 757px) {
+  #slider_container p {
+    font-size: 17px;
+  }
+}
+/* HOW CAN WE HELP YOU */
+@media screen and (max-width: 992px) {
+  #help_section label {
+    font-size: 10px;
+  }
+}
+
+/* scroll bar in help section for small devices */
+
+@media screen and (max-width: 575px) {
+  #help-div {
+    height: 300px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #9f476a;
+  }
+}
 
 /* STAY CONNECTED  */
-@media screen and (max-width: 768px) and (min-width:622px){
-  #stay_connected{
-    font-size: 27px;
+@media screen and (min-width: 768px) {
+  #first-col,
+  #second-col {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 985px) and (min-width: 768px) {
+  #email {
+    width: 53%;
+  }
+}
+@media screen and (min-width: 767px) {
+  #mailbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  #mailbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #stay-connected{
+    font-size: 25px;
   }
   #with_us{
-    font-size: 27px;
+    font-size: 25px;
   }
   #newsletter{
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 13px;
   }
-  #email {
-    width: 40%;
-    border-radius: 8px;
-    padding: 6px;
-    border: none;
-    font-size: 0.6rem;
-    font-weight: 500;
-    margin-top: 1rem;
+  #email::placeholder{
+    font-size: 12px;
+  }
+  
+}
+@media screen and (max-width: 450px){
+  #email{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 369px){
+  #email{
+    width: 65%;
+  }
+}
+
+/* FOOTER */
+@media screen and (max-width: 408px) and (min-width: 341px) {
+  .sm-fontsize {
+    font-size: 14px;
+  }
+  .footer_head b {
+    font-size: 16px;
+  }
+  #footer a {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 341px) {
+  .sm-fontsize {
+    font-size: 12px;
+  }
+  .footer_head b {
+    font-size: 13.2px;
+  }
+  #footer a {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 305px) {
+  .row > div {
+    padding: 0;
+    margin: 0;
   }
 }
