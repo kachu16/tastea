@@ -2,23 +2,51 @@ const submit_button = document.getElementById("submit-btn");
 const rest_button = document.getElementById("reset-btn");
 
 submit_button.addEventListener("click", displayTea);
-rest_button.addEventListener('click',remove_help);
+rest_button.addEventListener("click", remove_help);
 
-function displayTea() {
-  const checkbox = document.getElementsByClassName("form-check-input");
-  const checkedArr = [];
-  let j = 0;
-  for (let i = 0; i < checkbox.length; i++) {
-    if (checkbox[i].checked === true) {
-      checkedArr[j] = checkbox[i].value;
-      j++;
+let j = 0;
+let checkedArr = [];
+
+function checklist(para) {
+  document.getElementById(para).checked = true;
+  checkedArr[j] = para;
+  j++;
+}
+
+function showTea(tea){
+  let count = 0;
+  for (let k = 0; k < tea.length; k++) {
+    const ele = tea[k];
+    let teaClasses = ele.className.split(/\s+/).filter((ele) => ele !== "");
+    teaClasses = teaClasses.splice(5);
+    for (let i = 0; i < checkedArr.length; i++) {
+      const cl = checkedArr[i];
+      for (let j = 0; j < teaClasses.length; j++) {
+        if (cl === teaClasses[j]) {
+          ele.style.display = "block";
+          count = count + 1;
+          if (count == 4) {
+            return;
+          }
+        }
+      }
     }
   }
+}
+
+
+function displayTea() {
   const tea = document.getElementsByClassName("tea");
+  for (let a = 0; a < tea.length; a++) {
+    tea[a].style.display = "none";
+  }
 
   const suggested_tea = document.getElementById("suggested_tea");
 
-  if (checkedArr.length !==0 && document.getElementById("help_heading")===null) {
+  if (
+    checkedArr.length !== 0 &&
+    document.getElementById("help_heading") === null
+  ) {
     const heading = document.createElement("h3");
     heading.style.fontWeight = "bold";
     heading.style.color = "#9f476a";
@@ -28,24 +56,14 @@ function displayTea() {
     suggested_tea.prepend(heading);
   }
 
-  let count=0;
-  for (let k = 0; k < tea.length; k++) {
-    const ele = tea[k];
-    let teaClasses = ele.className.split(/\s+/).filter((ele) => ele !== "");
-    teaClasses = teaClasses.splice(6);
-    for (let i = 0; i < checkedArr.length; i++) {
-      const cl = checkedArr[i];
-      for (let j = 0; j < teaClasses.length; j++) {
-        if (cl === teaClasses[j]) {
-          ele.className = ele.className.replace("d-none", "");
-          count = count + 1;
-          if (count==4) {
-            return;
-          }
-        }
-      }
-    }
-  }
+  showTea(tea);
+
+  checkedArr.forEach(ele => {
+    document.getElementById(ele).checked = false;
+  });
+  
+  checkedArr = [];
+  j=0;
 }
 
 function remove_help() {
@@ -53,26 +71,29 @@ function remove_help() {
 }
 
 
+
 // Slider Code
 
 var index = 0;
-var i=0;
+var i = 0;
 var slider = document.getElementsByClassName("slider");
 
 auto();
 
-function show(n){
-   for (i = 0; i < slider.length; i++) {//slider.length = 3
-       slider[i].style.display = "none";        
-   } 
-   slider[n-1].style.display=("flex");
-} 
+function show(n) {
+  for (i = 0; i < slider.length; i++) {
+    //slider.length = 3
+    slider[i].style.display = "none";
+  }
+  slider[n - 1].style.display = "flex";
+}
 
-function auto(){
-   index++;
-   if(index>slider.length){//to move from last slide to first slide
-       index=1;
-   }
-   show(index);
-   setTimeout(auto,4000);
+function auto() {
+  index++;
+  if (index > slider.length) {
+    //to move from last slide to first slide
+    index = 1;
+  }
+  show(index);
+  setTimeout(auto, 4000);
 }
