@@ -191,37 +191,21 @@
     overflow-x: hidden;
   }
 
-  ::-webkit-scrollbar-thumb {
-    background-color: #9f476a;
-  }
 }
 
 /* STAY CONNECTED  */
 @media screen and (min-width: 768px) {
-  #first-col,
-  #second-col {
+  #first-col{
     text-align: center;
   }
 }
 
 @media screen and (max-width: 985px) and (min-width: 768px) {
-  #email {
-    width: 53%;
-  }
-}
-@media screen and (min-width: 767px) {
-  #mailbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  #emailForm{
+    width: 70%;
   }
 }
 @media screen and (max-width: 768px) {
-  #mailbox {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
   #stay-connected{
     font-size: 25px;
   }
@@ -238,13 +222,26 @@
   
 }
 @media screen and (max-width: 450px){
-  #email{
-    width: 50%;
+  #emailForm{
+    width: 80%;
   }
 }
 @media screen and (max-width: 369px){
+  #emailForm{
+    width: 90vw;
+  }
+  #mailbox{
+    font-size: 0.85rem;
+  }
+  #email,#submit_button,#submit_button>img{
+    margin: 0;
+    padding: 0;
+  }
   #email{
-    width: 65%;
+    padding-left: 5px;
+  }
+  #submit_button>img{
+    width: 1.2rem;
   }
 }
 
