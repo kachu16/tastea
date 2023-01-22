@@ -228,7 +228,7 @@
 }
 @media screen and (max-width: 369px){
   #emailForm{
-    width: 90vw;
+    width: 70vw;
   }
   #mailbox{
     font-size: 0.85rem;
