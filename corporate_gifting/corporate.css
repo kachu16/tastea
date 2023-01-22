@@ -1,0 +1,93 @@
+#corporate_box{
+    width: 100%;
+    height: 100vh;
+    background: url("./b-img.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.corporate_content{
+    /* background-color: aquamarine; */
+    padding-top: 10rem;
+    padding-left: 7rem;
+    width: 50%;
+}
+#corporate_box h4{
+    /* color: rgb(149, 13, 131); */
+    /* font-weight: bold; */
+    margin-top: 1rem;
+}
+
+#corporate_para{
+    padding:1rem 6rem 1rem 0rem;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    /* color: rgb(106, 99, 99); */
+}
+
+.button_box p::before{
+    content: "";
+}
+.button_box p{
+    font-size: 14px;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    letter-spacing: 0.5px;
+    padding: 0 2.3rem;
+    /* color: rgb(90, 76, 76); */
+    color: white;
+    background: url("./contactBg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gift p{
+    font-size: 14px;
+    padding-right: 1rem;
+}
+.gift img{
+    transition: all 0.35s ease-in-out;margin-bottom: 1rem;
+}
+.gift img:hover{
+    scale: 1.2;
+}
+.c_para{
+    font-size: 17px;
+    color: rgb(145, 139, 139);
+}
+#bulk{
+    width: 100%;
+    height: 34vh;
+    background: url("./bulk.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wrapper {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    background-color: #f2f2f2;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 0 26px;
+    width: 70vw;
+    margin: auto;
+}
+
+.user_form{
+    width: 50%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.c_btn{
+    padding: 5px 20px;
+}
+#corporate_des h1{
+    font-style: italic;
+    font-weight: 300;
+}
