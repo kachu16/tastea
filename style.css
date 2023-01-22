@@ -104,7 +104,8 @@ html {
   display: block;
 }
 .list-background {
-  background-color: #e6dfd9;
+  /* background-color: #e6dfd9; */
+  background-color: #dfe2e6;
 }
 /************************************
           IMAGE SECTION
@@ -119,6 +120,7 @@ html {
 
 #image-text {
   padding: 3rem;
+  margin-top: 3rem;
 }
 
 /* Img-heading  */
@@ -174,7 +176,7 @@ html {
 #slider_container p {
   font-size: 22px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 .slider{
   display: none;
@@ -307,3 +309,4 @@ html {
 #footer h3 {
   color: #9f476a;
 }
+
