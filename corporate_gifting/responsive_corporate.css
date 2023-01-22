@@ -1,0 +1,140 @@
+@media screen and (max-width: 1000px) {
+    #corporate_box {
+    height: auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .button_box p{
+        margin-left: 1rem;
+    }
+    #bulk {
+        height: 20vh;
+    }
+    .user_form{
+        width: 70%;
+    }
+    .corporate_content{
+        padding-top: 5rem;
+        padding-left: 1.5rem;
+        padding-right: 2rem;
+        padding-bottom: 1rem;
+    }
+    .wrapper{
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 767px) {
+    .corporate_content{
+        padding-top: 1rem;
+        padding-left: .75rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        width: 60%;
+    }
+    .corporate_content>h1{
+        font-size: 1.4rem;
+    }
+    .corporate_content>h4{
+        font-size: 1rem;
+    }
+    .button_box p {
+        margin: 0 0 0 1rem;
+    }
+    .wrapper{
+        width: 90vw;
+        padding: 0;
+    }
+    #bulk {
+        min-height: 20vh;
+        height: fit-content;
+        flex-direction: column;
+    }
+    .bulk_details{
+        padding-left: 1rem;
+    }
+    .bulk_details p{
+        margin-bottom: 0;
+    }
+    .user_form{
+        padding: 0 0.5rem;
+    }
+}
+
+
+@media screen and (min-width: 280px) and (max-width: 540px) {
+    .corporate_content{
+        width: 70%;
+    }
+    .corporate_content>h1{
+        font-size: 1.3rem;
+    }
+    .corporate_content>h4{
+        font-size: 1rem;
+    }
+    .button_box p {
+        margin: 0 0 0 5px;
+        font-size: 9px;
+    }
+    
+
+    .wrapper{
+        width: 95vw;
+    }
+
+    .gift>img{
+        width: 5rem;
+        height: 5rem;
+    }
+    .gift p {
+        font-size: 12px;
+        margin-bottom: 0.5rem;
+    }
+    #bulk{
+        min-height: 20vh;
+        height: fit-content;
+        padding: 1.5rem 0.5rem;
+    }
+    .bulk_details{
+        padding-left: 0.5rem;
+    }
+    .bulk_details h1{
+        font-size: 1.2rem;
+    }
+    .bulk_details p{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .user_form{
+        width: 95vw;
+    }
+    .form_head2{
+        font-size: 1rem;
+    }
+    .user_form input{
+        padding: 2px 2px 2px 3px;
+    }
+
+    #corporate_des>h1{
+        font-size: 1rem;
+    }
+    #corporate_>img{
+        width: 7rem;
+        height: 7rem;
+    }
+}
+@media screen and (max-width: 350px) {
+    .corporate_content{
+        width: 95vw;
+    }
+}
+/* 
+@media screen and (max-width: 280px){
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1500px) {
+}
+@media screen and (max-width: 1083px){
+}  */
