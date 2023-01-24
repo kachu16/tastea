@@ -1,0 +1,380 @@
+.corporate_image {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.corporate_image::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('./img.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    opacity: 0.8;
+}
+
+.corporate_image h1 {
+    position: relative;
+    color: rgb(79, 6, 55);
+    color: rgb(128, 33, 97);
+    /* color: rgb(123, 15, 87); */
+    font-weight: bolder;
+    font-size: 60px;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.corporate_image p,
+.corporate_image button {
+    position: relative;
+}
+
+.corporate_image {
+    animation: transitionIn 0.75s;
+}
+
+/* PAGE TRANSITION */
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        rotate: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.corporate_image button {
+    border-radius: 13px;
+    padding: 12px 30px;
+    font-size: 19px;
+    transform: scale(0.94);
+    animation: scale 2s forwards cubic-bezier(0.5, 1, 0.89, 1);
+
+
+}
+
+/* ANIMATIONS */
+@keyframes scale {
+    100% {
+        transform: scale(1);
+    }
+}
+
+span,
+.corporate_image button {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+.corporate_image button {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+
+}
+
+span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+
+/* CATEGORY SECTION */
+.customize {
+    margin: 0 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: aqua; */
+}
+
+.customize img {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.custom_div p {
+    text-align: center;
+    font-weight: bold;
+    color: #9f476a;
+    margin-top: 10px;
+}
+@media screen and (max-width: 1469px) {
+    .custom_div {
+        /* display: block;
+        max-width: 100%; */
+        flex-basis: 20%;
+        flex-direction: row;
+    }
+    .customize {
+        margin: 0 60px;
+    }
+
+    
+}
+
+
+
+/* FORM  */
+.our_details {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 15px;
+    /* background-color: #e1a1dc; */
+    background-color: #f1def0;
+    padding-left: 15px;
+
+}
+
+.our_details h3 {
+    font-weight: bold;
+    color: #9f476a;
+    padding-top: 20px;
+
+}
+
+.our_details>p {
+    color: rgb(88, 82, 82);
+}
+
+.details p {
+    color: rgb(92, 87, 87);
+}
+
+.corporate_form {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    background-color: #f2f2f2;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input::placeholder {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (min-width:464px) and (max-width:800px) {
+    .corporate_formdiv {
+        margin: 0 70px;
+    }
+
+}
+
+@media screen and (min-width:801px) {
+    .corporate_formdiv {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .our_details {
+        flex-basis: 40%;
+        padding-top: 250px;
+    }
+
+    .corporate_form {
+        flex-basis: 50%;
+    }
+
+}
+
+@media screen and (min-width:1153px) {
+
+    .our_details {
+        flex-basis: 25%;
+        padding-top: 290px;
+    }
+
+    .corporate_form {
+        flex-basis: 40%;
+    }
+
+}
+
+/* VIDEO */
+.video_div {
+    margin-top: 50px;
+}
+
+.video_div video {
+    max-width: 100%;
+    /* width: 280px; */
+    margin: 0px auto;
+    display: block;
+    border-radius: 0px;
+
+}
+
+.video_div p {
+    text-align: center;
+    /* color: #9f476a; */
+    color: rgb(96, 87, 87);
+    font-weight: bold;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+.video_div > div{
+    margin-top: 10px;
+}
+
+@media screen and (min-width:717px) {
+    .video_div {
+        display: flex;
+        /* background: rgb(199, 108, 108); */
+        align-items: center;
+        justify-content: center;
+        margin: 50px 30px;
+        border: 2px solid rgb(224, 222, 222);
+        border-radius: 20px;
+    }
+
+    .video_div video {
+        max-width: 55%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+}
+@media screen and (max-width:787px){
+    .video_div p{
+        font-size: 14px;
+    }
+
+}
+@media screen and (min-width:1077px){
+    .video_div p {
+        font-size: 17px;
+        padding: 0 50px;
+    }
+    
+
+}
+@media screen and (min-width:1277px){
+    .video_div p {
+        font-size: 19px;
+        padding: 0 60px;
+    }
+    .video_div{
+        margin: 50px 130px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width:600px) {
+    .corporate_image::before {
+        background-position: 75% 25%;
+    }
+
+    .corporate_image h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .corporate_image::before {
+        background-position: 75% 25%;
+    }
+
+    .corporate_image h1 {
+        font-size: 40px;
+    }
+
+
+}
+
+@media screen and (max-width:337px) {
+    .corporate_image h1 {
+        font-size: 32px;
+    }
+
+
+}
+
+@media screen and (max-width: 998px) {
+    .corporate_image button {
+        padding: 8px 20px;
+        font-size: 17px;
+    }
+
+
+}
+
+@media screen and (max-width: 427px) {
+    .corporate_image button {
+        padding: 5px 17px;
+        font-size: 14px;
+    }
+
+
+}
